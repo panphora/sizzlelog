@@ -1,8 +1,3 @@
-{{!-- <h1>Welcome to the app!</h1>
-<div>[[ Dynamic Remake code goes here]]</div>
-<br><br>
-<a href="https://docs.remaketheweb.com/a-simple-example-app/">Try a simple todo app</a> --}}
-
 <div class="main-topnav">
     <a href="/" class="logo">
         <svg class="logo" viewBox="0 0 236 47" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,100 +20,25 @@
         </svg>
     </a>
 
-    
+
 
     <div class="login">
         <h3 class="greeting">
             Hi {{currentUser.details.username}}
         </h3>
-    <a href="/user/logout">
-        <button class=" block">
-            LOG OUT
-        </button>
-    </a>
-    </div>  
-   
-
-</div>
-
-
-<div 
-    class = "projects-container" 
-    array
-    key="projects"
->
-
-    <div class = "projects-head">
-        <div class="projects-content">
-            <h1>
-                Your Projects{{user}}
-                <button class="add" new:project  >
-                    Add New +
-                </button>
-            </h1>
-            
-        </div>
-    </div>
-
-    <div class="projects-grid">
-    
-    
-
-    {{#for project in projects}}
-
-
-
-        <a href="/{{currentUser.details.username}}/project/{{project.id}}">
-            
-            <div class="project" object key:name="@search" key:id="{{project.id}}" >
-                <h1
-                key="changelog"
-                target:name="@innerText"
-                array
-                > 
-                    {{default project.name "New Project"}}
-                </h1>
-            
-            </div>
+        <a href="/user/logout">
+            <button class=" block">
+                LOG OUT
+            </button>
         </a>
-    {{/for}}
-
     </div>
+
 
 </div>
 
-{{!-- {
-  "projects": {
-    "botsiva":{
-      "data":[
-        {
-          "name" : "botsiva"
-        }
-      ],
-      "changelog":[
-        {
-          "title" : "title",
-          "content": "content",
-          "tags" : "tags",
-          "color": "color",
-          "time": "time"
-        },
-        {
-          "title" : "title",
-          "content": "content",
-          "tags" : "tags",
-          "color": "color",
-          "time": "time"
-        },
-        {
-          "title" : "title",
-          "content": "content",
-          "tags" : "tags",
-          "color": "color",
-          "time": "time"
-        }
-      ]
+<div class = "topbar">
 
-    }
-  }
-} --}}
+    <input class="bgPicker" type="color" value="#ff0000">
+    <button class="add-change">Add A Change + </button>
+
+</div>

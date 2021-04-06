@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon _remake/server.js --watch ./",
+    "build:css": "tailwind build style.css -o app/assets/css/tailwind.css",
     "remake-build": "npx esbuild _remake/client-side/index.js --bundle --minify --sourcemap=external --outdir=_remake/dist/remake/js --target=edge16 --format=iife --global-name=Remake && mv _remake/dist/remake/js/index.js _remake/dist/remake/js/remake.min.js && mv _remake/dist/remake/js/index.js.map _remake/dist/remake/js/remake.min.js.map && echo '//# sourceMappingURL=remake.min.js.map' >> _remake/dist/remake/js/remake.min.js"
   },
   "nodemonConfig": {
@@ -66,8 +67,11 @@
     "upath": "^1.2.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
     "esbuild": "^0.8.2",
     "nodemon": "^1.19.1",
-    "shelljs": "^0.8.3"
+    "postcss": "^8.2.9",
+    "shelljs": "^0.8.3",
+    "tailwindcss": "^2.0.4"
   }
 }

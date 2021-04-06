@@ -5,16 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your App</title>
   <link rel="stylesheet" type="text/css" href="/assets/css/_remake.css">
+
+
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/blocks.css" />
 </head>
 <body>
-  {{#if currentUser}}
+  {{!-- {{#if currentUser}}
     <a href="/user/logout">Logout</a>
   {{else}}
     <a class="nav__button" href="/user/signup">Sign up</a>
     &nbsp;
     <a class="nav__button" href="/user/login">Log in</a>
-  {{/if}}
+  {{/if}} --}}
   {{!-- Show errors --}}
   {{#if flashErrors }}
     {{#each flashErrors }}
@@ -36,5 +41,6 @@
     <script src="/assets/js/remake-init.js"></script>
   {{/if}}
   <script src="/assets/js/main.js"></script>
+  
 </body>
 </html>

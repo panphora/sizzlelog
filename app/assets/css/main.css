@@ -540,7 +540,7 @@ body {
 .topbar{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #f3cf0057;
+  /* background-color: #f3cf0057; */
   margin: 2em 8em;
 }
 
@@ -556,17 +556,18 @@ body {
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 700;
   border-radius: 3px;
+  font-size: 1.2em;
   padding: 6px 14px;
   background: #000;
   font-weight: bold;
   cursor: pointer;
   box-sizing: border-box;
-
+  float: right;
   position: relative;
   top: -2px;
   left: -2px;
   transition: transform 0.2s;
-  margin: 8px 6px 10px 6px;
+  margin: 10px 6px 10px 6px;
   z-index: 1;
   user-select: none;
   -webkit-user-select: none;
@@ -596,8 +597,7 @@ body {
   z-index: -1;
 }
 
-.add-change:hover,
-.add-change:focus {
+.add-change:hover{
   transform: translate(2px, 2px);
 }
 
@@ -610,29 +610,29 @@ body {
   height: calc(100% + 6px);
   width: calc(100% + 6px);
   position: absolute;
-  top: -1px;
-  left: 0px;
+  top: 2px;
+  left: 2px;
   right: 0;
   z-index: -2;
   transition: transform 0.2s;
 }
 
-.add-change:hover::after,
-.add-change:focus::after {
+.add-change:hover::after {
   transform: translate(-2px, -3px);
 }
 
-.add-change:active {
-  color: var(--block-text-color);
-  transform: translate(3px, 3px);
+.changelog-main{
+  margin: 0em 8em;
+  background-color: #00ae8548;
 }
 
-.add-change:active::after {
-  transform: translate(-4px, -4px);
+.changelog-head{
+  font-size: 3em;
+  margin-left: 4em;
 }
 
-.add-change:focus {
-  outline: none;
+.add-wrapper{
+  /* background-color: #00ae86; */
 }
 
 @media only screen and (max-width: 1200px){

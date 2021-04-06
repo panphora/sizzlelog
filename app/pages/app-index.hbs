@@ -44,15 +44,14 @@
 
 <div 
     class = "projects-container" 
-    array
-    key="projects"
+    
 >
 
     <div class = "projects-head">
         <div class="projects-content">
             <h1>
                 Your Projects{{user}}
-                <button class="add" new:project  >
+                <button class="add" new:project>
                     Add New +
                 </button>
             </h1>
@@ -60,16 +59,12 @@
         </div>
     </div>
 
-    <div class="projects-grid">
-    
+    <div array
+    key="projects" class="projects-grid">
     
 
     {{#for project in projects}}
-
-
-
-        <a href="/{{currentUser.details.username}}/project/{{project.id}}">
-            
+        <a href="/{{$root.currentUser.details.username}}/project/{{project.id}}">
             <div class="project" object key:name="@search" key:id="{{project.id}}" >
                 <h1
                 key="changelog"

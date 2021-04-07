@@ -623,17 +623,92 @@ body {
 
 .changelog-main{
   margin: 0em 8em;
-  background-color: #00ae8548;
+  /* background-color: #00ae8548; */
 }
 
 .changelog-head{
   font-size: 3em;
-  margin-left: 4em;
+  /* margin-left: 2em; */
 }
 
 .add-wrapper{
   /* background-color: #00ae86; */
 }
+/* @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
+ body {
+	 font-size: 14px;
+	 line-height: 1.5;
+}
+ h1, h2, h3, h4, h5, h6 {
+	 font-family: 'Oswald', sans-serif;
+}
+ h1 {
+	 font-size: 2rem;
+	 margin-bottom: 0.5em;
+}
+ p {
+	 font-family: 'Roboto', sans-serif;
+	 font-size: 0.8rem;
+} */
+
+.tl{
+  margin: 0;
+  padding: 2em;
+  background-color: #f3590065;
+  border-radius: 1em;
+}
+ .container {
+	 max-width: 1024px;
+	 width: 90%;
+  /* padding: 20em; */
+   margin: 0 auto;
+
+}
+
+.changelog-head{
+  padding-left: 2vw;
+}
+ .timeline-item {
+
+	 padding: 3em 2em 2em;
+   padding-top: 0.8em;
+   margin: 0;
+   /* padding: 0; */
+   padding-left: 2vw;
+	 position: relative;
+	 color: rgba(0, 0, 0, .7);
+	 border-left: 2px solid rgba(0, 0, 0, .3);
+}
+ .timeline-item p {
+	 font-size: 1rem;
+}
+ .timeline-item::before {
+	 content: attr(date-is);
+	 position: absolute;
+	 left: -7em;
+	 font-weight: bold;
+	 top: 1.2em;
+	 display: block;
+	 font-family: 'Roboto', sans-serif;
+	 font-weight: 700;
+	 font-size: 0.9em;
+}
+ .timeline-item::after {
+	 width: 7px;
+	 height: 7px;
+	 display: block;
+	 top: 1em;
+	 position: absolute;
+	 left: -9px;
+	 border-radius: 10px;
+	 content: '';
+	 border: 5px solid rgb(0, 0, 0);
+	 background: white;
+}
+ .timeline-item:last-child {
+	 border-image: linear-gradient(to bottom, rgba(0, 0, 0, .3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+ 
 
 @media only screen and (max-width: 1200px){
     .video-container{

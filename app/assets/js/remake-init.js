@@ -25,4 +25,15 @@ Remake.onAddItem(function (res) {
   }
 });
 
+const colorPicker = document.querySelector('#bg');
+const body = document.querySelector('body');
+const text = document.querySelector('#text');
+
+colorPicker.addEventListener('change', function() {
+    Remake.callSaveFunction(text);
+    colorPicker.value = this.value
+    body.style.backgroundColor = this.value
+});
+
+
 // Remake.callSaveFunction(document.body)

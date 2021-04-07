@@ -38,16 +38,126 @@
 
 <div class = "topbar">
 
-    <input class="bgPicker" type="color" value="#ff0000">
+    <input id="bg" class="bgPicker"  type="color" value={{currentItem.bg}}>
     <div class="add-wrapper">
-        <button class="add-change">Add A Change + </button>
+        <button new:item class="add-change">Add A Change + </button>
     </div>  
 
 </div>
 
-<div class="changelog-main">
-    <h1 class="changelog-head">
-        Botsiva Changelog
-    </h1>
+<div id= "text" object key:id={{currentItem.id}} key:bg="@search" class="changelog-main">
     
+    <div class="changelog">
+    <div array key="changelog" target:bg="#ff3422" class="container">
+        <h1 class="changelog-head">
+            Botsiva Changelog
+        </h1>
+        {{#for item in currentItem.changelog}}
+            <div object key:id="{{generateIdIfNone item.id}}" key:content="@search" key:title="@search"  class="timeline-item" date-is='20-07-1990'>
+                <div class="tl">
+                <h1 target:title="@innerText" edit:title >{{default item.name "Title"}}</h1>
+                <p target:content="@innerText" edit:content>
+                    {{default item.content "This is the content"}}
+                </p>
+                </div>
+            </div>
+        {{/for}}
+    
+        {{!-- <div class="timeline-item" date-is='20-07-1990'>
+            <div class="tl" >
+
+            <h1>Oeehhh, that's awesome.. Me too!</h1>
+            <p>
+                I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I
+                write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups
+                and this is politics, are they really so different? I think the only card she has is the Lorem card.
+            </p>
+            </div>
+        </div>
+    
+        <div class="timeline-item" date-is='20-07-1990'>
+            <div class="tl">
+
+            <h1>I'm ::last-child so my border fades ^__^</h1>
+            <p>
+                I'm speaking with myself, number one, because I have a very good brain and I've said a lot of things. I
+                write the best placeholder text, and I'm the biggest developer on the web by far... While that's mock-ups
+                and this is politics, are they really so different? I think the only card she has is the Lorem card.
+            </p>
+            </div>
+        </div> --}}
+    </div>
+        {{!-- <div class="changelog-timeline">
+            Hello       
+        </div>
+
+        <div class="changelog-content">
+            Workld
+        </div> --}}
+    </div>
 </div>
+
+
+{{!-- <div class="timeline">
+    <div class="entry">
+        <div class="title">
+            <h3>2014 - Present</h3>
+        </div>
+        <div class="body">
+            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+            <ul>
+                <li>Rerum sit libero possimus amet excepturi</li>
+                <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+            </ul>
+        </div>
+    </div>
+    <div class="entry">
+        <div class="title">
+            <h3>2010 - Present</h3>
+        </div>
+        <div class="body">
+            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+            <ul>
+                <li>Rerum sit libero possimus amet excepturi</li>
+                <li>Rerum sit libero possimus amet excepturi</li>
+                <li>Rerum sit libero possimus amet excepturi</li>
+                <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+            </ul>
+        </div>
+    </div>
+    <div class="entry">
+        <div class="title">
+            <h3>2009 - 2010</h3>
+        </div>
+        <div class="body">
+            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+            <ul>
+                <li>Rerum sit libero possimus amet excepturi</li>
+                <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+            </ul>
+        </div>
+    </div>
+    <div class="entry">
+        <div class="title">
+            <h3>2006 - 2008</h3>
+        </div>
+        <div class="body">
+            <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+            <ul>
+                <li>Rerum sit libero possimus amet excepturi</li>
+                <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+            </ul>
+        </div>
+    </div>
+
+</div> --}}

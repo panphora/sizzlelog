@@ -64,8 +64,8 @@
     
 
     {{#for project in projects}}
-        <a href="/{{$root.currentUser.details.username}}/project/{{project.id}}">
-            <div class="project" object key:name="@search" key:id="{{project.id}}" >
+        <a href="/{{@root.currentUser.details.username}}/project/{{project.id}}">
+            <div class="project" object key:name="@search" key:bg="#fff" key:id="{{project.id}}" >
                 <h1
                 key="changelog"
                 target:name="@innerText"

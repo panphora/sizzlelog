@@ -697,7 +697,7 @@ body {
   padding: 12px 20px;
   background: rgba(0, 0, 0, 0);
   font-weight: bold;
-  cursor: pointer;
+  /* cursor: pointer; */
   box-sizing: border-box;
   font-size: 1.5em;
   position: relative;
@@ -847,7 +847,7 @@ body {
 
 .pricing-boxes{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2.5em;
 }
 
@@ -863,7 +863,20 @@ body {
 }
 
 .pricingblock1{
-  padding: 2em 0em;
+  padding: 6em 0em;
+}
+
+.pricing-block h3{
+  text-align: center;
+  font-family: 'Roboto Slab';
+  font-size: 1em;
+}
+
+.pricing-early-access h3{
+  text-align: left;
+  padding:0em  1em;
+  font-family: 'Roboto Slab';
+  font-size: 1.2em;
 }
 
 .pricing-early-access{
@@ -878,7 +891,7 @@ body {
   padding: 4px 8px;
   background: #000;
   font-weight: bold;
-  cursor: pointer;
+  /* cursor: pointer; */
   box-sizing: border-box;
 
   position: relative;
@@ -906,7 +919,8 @@ body {
 .pricing-block-black::before {
   content: "";
   background: #000;
-  border-radius: 3px;
+    border-radius: 15px;
+
   box-sizing: border-box;
   position: absolute;
   top: -3px;
@@ -926,7 +940,8 @@ body {
   display: block;
   box-sizing: border-box;
   background: #F35800;
-  border-radius: 3px;
+    border-radius: 15px;
+
   height: calc(100% + 6px);
   width: calc(100% + 6px);
   position: absolute;
@@ -1023,7 +1038,7 @@ body {
   padding: 4px 8px;
   background: #F35800;
   font-weight: bold;
-  cursor: pointer;
+  /* cursor: pointer; */
   box-sizing: border-box;
 
   position: relative;
@@ -1051,7 +1066,7 @@ body {
 .pricing-block-orange::before {
   content: "";
   background: #F35800;
-  border-radius: 3px;
+    border-radius: 15px;
   box-sizing: border-box;
   position: absolute;
   top: -3px;
@@ -1071,7 +1086,7 @@ body {
   display: block;
   box-sizing: border-box;
   background: #000;
-  border-radius: 3px;
+  border-radius: 15px;
   height: calc(100% + 6px);
   width: calc(100% + 6px);
   position: absolute;
@@ -1162,7 +1177,24 @@ body {
 }
 
 .pricing .head{
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
+}
+
+.pricing-head{
+  text-align: center;
+  font-size: 2em;
+}
+
+.pricingblock{
+}
+
+.free-svg{
+  margin-top: 1em;
+}
+
+.svg{
+  margin: 0em 4em ;
+  margin-bottom: 1em;
 }
 
 @media only screen and (max-width: 1200px){

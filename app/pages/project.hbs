@@ -38,7 +38,7 @@
 
 <div class = "topbar">
 
-    <input id="bg" class="bgPicker"  type="color" value={{currentItem.bg}}>
+    <input id="bg" class="bgPicker" target:bg="@value" type="color">
     <div class="add-wrapper">
         <button new:item class="add-change">Add A Change + </button>
     </div>  
@@ -48,7 +48,7 @@
 <div id= "text" object key:id={{currentItem.id}} key:bg="@search" class="changelog-main">
     
     <div class="changelog">
-    <div array key="changelog" target:bg="#ff3422" class="container">
+    <div array key="changelog"  class="container">
         <h1 class="changelog-head">
             Botsiva Changelog
         </h1>

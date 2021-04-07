@@ -863,7 +863,7 @@ body {
 }
 
 .pricingblock1{
-  padding: 6em 0em;
+  padding: 2em 0em;
 }
 
 .pricing-block h3{
@@ -1177,7 +1177,7 @@ body {
 }
 
 .pricing .head{
-  margin-bottom: 1em;
+  margin-bottom: 1.4em;
 }
 
 .pricing-head{
@@ -1195,6 +1195,105 @@ body {
 .svg{
   margin: 0em 4em ;
   margin-bottom: 1em;
+}
+
+.roadmap{
+    min-height: 91.7vh;
+    margin-top: 7em;
+    margin-left: 5em;
+}
+
+
+
+ul, li {
+	 list-style: none;
+	 padding: 0;
+}
+
+ .sessions {
+	 margin-top: 5em;
+   margin-left: 2em;
+	 border-radius: 12px;
+	 position: relative;
+}
+ li {
+	 padding-bottom: 1.5rem;
+	 border-left: 3px solid #2c2c2c;
+	 position: relative;
+   margin-top: 0;
+   
+	 padding-left: 20px;
+	 margin-left: 10px;
+}
+
+ li:before {
+	 content: '';
+	 width: 13px;
+	 height: 13px;
+	 background: #F35800;
+	 border: 3px solid #000000;
+	 box-shadow: 3px 3px 0px #bab5f8;
+	 box-shadow: 3px 3px 0px #00000041;
+	 border-radius: 50%;
+	 position: absolute;
+	 left: -10px;
+	 top: 34px;
+}
+
+ li:last-child::before {
+   background-color: rgba(0, 0, 0, 0);
+    box-shadow: 3px 3px 0px #00000000;
+	 border: 0px;
+	 padding-bottom: 0;
+}
+
+
+
+ p {
+	 color: #474747;
+	 /* line-height: 1.5; */
+   font-size: 1.8em;
+   font-weight: 900;
+   margin-top: 0;
+   padding: 0.8em 0em;
+   margin-bottom: 0;
+     margin-left: 1.6vw;
+}
+
+.sessions .head{
+  font-size: 2.5em;
+     margin-left: 1.6vw;
+   margin-top: 0;
+   padding-top: 1.5em;
+
+
+}
+
+.open-source{
+  min-height: 91.7vh;
+    margin-top: 7em;
+    padding-top: 5em;
+    margin-left: 5em;
+}
+
+.footer{
+  background-color: #000;
+  min-height: 40.7vh;
+  box-shadow: 1px -17px 0px #F35800;
+
+}
+
+.head-footer{
+   font-size: 3.3em;
+    font-weight: 900;
+  color: #fff;
+  text-align: center;
+  padding: 2.5em;
+  padding-bottom: 0;
+}
+
+.open-source .head{
+  max-width: 60%;
 }
 
 @media only screen and (max-width: 1200px){

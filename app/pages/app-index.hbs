@@ -59,25 +59,21 @@
         </div>
     </div>
 
-    <div array
-    key="projects" class="projects-grid">
-    
-
-    {{#for project in projects}}
-        <a href="/{{@root.currentUser.details.username}}/project/{{project.id}}">
-            <div class="project" object key:name="@search" key:bg="#fff" key:id="{{project.id}}" >
-                <h1
-                key="changelog"
-                target:name="@innerText"
-                array
-                > 
-                    {{default project.name "New Project"}}
-                </h1>
-            
-            </div>
-        </a>
-    {{/for}}
-
+    <div array key="projects" class="projects-grid">
+      {{#for project in projects}}
+          <a href="/{{@root.currentUser.details.username}}/project/{{generateIdIfNone project.id 'project.id'}}">
+              <div class="project" object key:name="@search" key:bg="#fff" key:id="{{generateIdIfNone project.id 'project.id'}}" >
+                  <h1
+                  key="changelog"
+                  target:name="@innerText"
+                  array
+                  > 
+                      {{default project.name "New Project"}}
+                  </h1>
+              
+              </div>
+          </a>
+      {{/for}}
     </div>
 
 </div>

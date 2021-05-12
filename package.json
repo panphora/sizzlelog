@@ -70,7 +70,7 @@
     "autoprefixer": "^10.2.5",
     "esbuild": "^0.8.2",
     "nodemon": "^1.19.1",
-    "postcss": "^8.2.9",
+    "postcss": "^8.2.10",
     "shelljs": "^0.8.3",
     "tailwindcss": "^2.0.4"
   }
